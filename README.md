@@ -3,7 +3,7 @@
 Everything you need to get started making a new style pattern.
 
 ## Install
-You can install using the [spm](https://github.com/stylep/stylep) command or install using npm and the project name.
+You can install using the [spm](https://github.com/stylep/stylep) command or install using npm and the project title.
 
 ``` shell
 spm install name
