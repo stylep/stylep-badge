@@ -1,4 +1,4 @@
-# stylep-template
+# stylep-name
 
 Everything you need to get started making a new style pattern.
 
@@ -6,7 +6,7 @@ Everything you need to get started making a new style pattern.
 You can install using the [spm](https://github.com/stylep/stylep) command or install using npm and the project name.
 
 ``` shell
-spm install template
+spm install name
 ```
 
 ## Usage
@@ -32,22 +32,22 @@ spm install template
 ## Patterns
 Placeholder selectors that contain common styles for structure and basic behavior.
 
-#### `@extend %name-of-pattern;`
+#### `@extend %name-inline;`
 Describe what this pattern does.
 
 ## Styles
 Customizable presets that give your pattern a specific style-set.
 
-### name-of-style
+### name-solid
 Describe the visual look and feel of this style.
 
 ##### Options
 
-* `$param-name: default-value` Describe what this does
+* `$param: default-value` Describe what this does
 
 ##### Example
 ```css
 /* describe in english what this following statement really means in detail */
-@mixin name-of-style default-value;
+@mixin name-solid default-value;
 ```
 
