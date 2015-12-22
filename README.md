@@ -1,7 +1,7 @@
 # stylep-name
+<img src=https://avatars1.githubusercontent.com/u/16121328?v=3&s=200 title=stylep-button align=right height=95>
 
 Everything you need to get started making a new style pattern.
-<img src=https://avatars1.githubusercontent.com/u/16121328?v=3&s=200 title=stylep-button align=right height=95>
 
 ## Install
 You can install using the [spm](https://github.com/stylep/stylep) command or install using npm and the project title.
