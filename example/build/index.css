@@ -71,6 +71,7 @@ h3 { font-weight: 300; }
 }
 
 .badge--solid-4 {
+  --badge-color: #efefef;
   --badge-text-color: green;
 }
 

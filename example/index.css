@@ -52,6 +52,7 @@ h3 { font-weight: 300; }
 
 .badge--solid-4 {
   @extend %badge-solid;
+  --badge-color: #efefef;
   --badge-text-color: green;
 }
 
