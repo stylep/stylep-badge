@@ -1,0 +1,39 @@
+/* @import stylep-button; */
+.badge--inline {
+  border-width: 0;
+  display: inline-block;
+  font-size: 12px;
+  padding: 3px 8px;
+  position: relative;
+  line-height: 1;
+  margin: 0 1% 1% 0;
+  max-width: 100%;
+  min-width: 22px;
+  outline: 0;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+body {
+  background-color: #E8EBEF;
+  color: #6B6B77;
+  font-family: 'Helvetica Neue';
+  overflow-x: hidden;
+}
+
+section {
+  background-color: #fff;
+  padding: 1em 1em .125em;
+  margin-bottom: 1em;
+}
+
+h1 { font-weight: 100; letter-spacing: 1px; }
+h2 { font-weight: 200; }
+h3 { font-weight: 300; }
+
+.badge--solid { background-color: #333; border: none; border-radius: 50px; color: #fff; }
+
+.badge--hollow { background-color: transparent; border: 1px solid #333; border-radius: 4px; color: #333; }
+
