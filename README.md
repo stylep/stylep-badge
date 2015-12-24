@@ -64,17 +64,11 @@ Draws a solid background ontop of a badge with white text for contrast.
 ##### Options
 
 ```css
---badge-color: #333; // Controls the color of the badge background
---badge-border: none; // Optional argument lets you specify a border style around your badge
---badge-radius: 50px; // Controls how much the badge is rounded off on it’s corners
---badge-shadow: none; // Optional argument that lets you specify a shadow around your badge
---badge-text-color: #fff; // Controls the color of the badge text
-```
-
-##### Example
-```css
-/* A solid green badge with white text, 5 pixels border-radius, with an orange border and a small dark shadow. */
-@mixin badge-solid green, white, 5px, 1px solid orange, 0 1px 5px rgba(0, 0, 0, .5);
+--badge-color: #333; // background
+--badge-border: none;
+--badge-radius: 50px;
+--badge-shadow: none;
+--badge-text-color: #fff;
 ```
 
 ### `@extend %badge-hollow;`
@@ -83,16 +77,10 @@ Draws a bordered element with dark text for contrast.
 ##### Options
 
 ```css
---badge-color: #333; // Controls the color of the badge border
---badge-background: transparent; // Optional argument for changing the background color
---badge-border-size: 1px; // Controls the thickness of the badge border
---badge-radius-size: 50px; // Controls how much the badge is rounded off on it’s corners
---badge-shadow: none; // Optional argument that lets you specify a shadow around your badge
-```
-
-##### Example
-```css
-/* A bordered badge with dark text, no background, rounded corners, 1px border and no shadow. */
-@mixin badge-hollow #333, #333, transparent, 50px, 1px, none;
+--badge-color: #333; // background and text color
+--badge-background: transparent;
+--badge-border-size: 1px;
+--badge-radius-size: 50px;
+--badge-shadow: none;
 ```
 
