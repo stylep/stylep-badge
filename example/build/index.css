@@ -1,19 +1,37 @@
 /* @import stylep-button; */
-.badge--inline {
-  border-width: 0;
-  display: inline-block;
+.badge--inline, .badge--inline-1, .badge--inline-2 {
+  display: var(--badge-display, inline-block);
   font-size: var(--badge-font-size, 12px);
-  padding: 3px 8px;
-  position: relative;
-  line-height: 1;
-  margin: 0 1% 1% 0;
-  max-width: 100%;
-  min-width: 22px;
-  outline: 0;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  white-space: nowrap;
+  padding: var(--badge-padding, 3px 8px);
+  position: var(--badge-position, relative);
+  line-height: var(--badge-line-height, 1);
+  margin: var(--badge-margin, 0 1% 1% 0);
+  max-width: var(--badge-max-width, 100%);
+  min-width: var(--badge-min-width, 22px);
+  outline: var(--badge-outline, 0);
+  text-align: var(--badge-text-align, center);
+  text-decoration: var(--badge-text-decoration, none);
+  vertical-align: var(--badge-vertical-align, middle);
+  white-space: var(--badge-white-space, nowrap);
+}
+
+.badge--solid, .badge--solid-1, .badge--solid-2, .badge--solid-3, .badge--solid-4 {
+  background: var(--badge-color, #333);
+  border: var(--badge-border, none);
+  border-radius: var(--badge-radius, 50px);
+  box-shadow: var(--badge-shadow, none);
+  color: var(--badge-text-color, #fff);
+}
+
+.badge--hollow, .badge--hollow-1, .badge--hollow-2, .badge--hollow-3, .badge--hollow-4 {
+  background: var(--badge-background, transparent);
+  border: var(--badge-border-size, 1px) var(--badge-border-style, solid) var(--badge-color, #333);
+  border-radius: var(--badge-radius, 50px);
+  box-shadow: var(--badge-shadow, none);
+  color: var(--badge-color, #333);
+}
+
+:root {
 }
 
 body {
@@ -33,7 +51,46 @@ h1 { font-weight: 100; letter-spacing: 1px; }
 h2 { font-weight: 200; }
 h3 { font-weight: 300; }
 
-.badge--solid { background-color: #333; border: none; border-radius: 50px; color: #fff; }
+.badge--inline-1 {
+  --badge-font-size: 18px;
+  --badge-padding: 10px 15px;
+  --badge-margin: 0 3% 3% 0;
+}
 
-.badge--hollow { background-color: transparent; border: 1px solid #333; border-radius: 4px; color: #333; }
+.badge--inline-2 {
+  --badge-outline: 1px solid red;
+}
 
+.badge--solid-1 {
+  --badge-color: green;
+}
+
+.badge--solid-2 {
+  --badge-border: 2px dotted red;
+  --badge-radius: 2px;
+}
+
+.badge--solid-3 {
+  --badge-shadow: 0 0 2px black;
+}
+
+.badge--solid-4 {
+  --badge-text-color: green;
+}
+
+.badge--hollow-1 {
+  --badge-color: green;
+}
+
+.badge--hollow-2 {
+  --badge-background-color: cyan;
+}
+
+.badge--hollow-3 {
+  --badge-border-size: 3px;
+  --badge-border-style: dashed;
+}
+
+.badge--hollow-4 {
+  --badge-shadow: 0 1px 10px rgba(0, 0, 0, .5);
+}

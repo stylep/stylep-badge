@@ -1,6 +1,9 @@
 /* @import stylep-button; */
 @import '../index.css';
 
+:root {
+}
+
 body {
   background-color: #E8EBEF;
   color: #6B6B77;
@@ -20,7 +23,60 @@ h3 { font-weight: 300; }
 
 .badge--inline { @extend %badge-inline; }
 
-.badge--solid { @mixin badge-solid; }
+.badge--inline-1 {
+  @extend %badge-inline;
+  --badge-font-size: 18px;
+  --badge-padding: 10px 15px;
+  --badge-margin: 0 3% 3% 0;
+}
 
-.badge--hollow { @mixin badge-hollow; }
+.badge--inline-2 {
+  @extend %badge-inline;
+  --badge-outline: 1px solid red;
+}
 
+.badge--solid { @extend %badge-solid; }
+
+.badge--solid-1 {
+  @extend %badge-solid;
+  --badge-color: green;
+}
+
+.badge--solid-2 {
+  @extend %badge-solid;
+  --badge-border: 2px dotted red;
+  --badge-radius: 2px;
+}
+
+.badge--solid-3 {
+  @extend %badge-solid;
+  --badge-shadow: 0 0 2px black;
+}
+
+.badge--solid-4 {
+  @extend %badge-solid;
+  --badge-text-color: green;
+}
+
+.badge--hollow { @extend %badge-hollow; }
+
+.badge--hollow-1 {
+  @extend %badge-hollow;
+  --badge-color: green;
+}
+
+.badge--hollow-2 {
+  @extend %badge-hollow;
+  --badge-background-color: cyan;
+}
+
+.badge--hollow-3 {
+  @extend %badge-hollow;
+  --badge-border-size: 3px;
+  --badge-border-style: dashed;
+}
+
+.badge--hollow-4 {
+  @extend %badge-hollow;
+  --badge-shadow: 0 1px 10px rgba(0, 0, 0, .5);
+}
