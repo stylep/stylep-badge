@@ -22,7 +22,8 @@ spm install badge
   @extend %badge-inline;
 
   /* Customize your button */
-  @mixin badge-solid green, white, 5px;
+  @extend badge-solid;
+  --badge-color: blue;
 
   /* or roll your own */
 
@@ -36,19 +37,39 @@ Placeholder selectors that contain common styles for structure and basic behavio
 #### `@extend %badge-inline;`
 Renders an inline element with standard padding and margin.
 
+##### Options
+
+```css
+--badge-display: inline-block;
+--badge-font-size: 12px;
+--badge-padding: 3px 8px;
+--badge-position: relative;
+--badge-line-height: 1;
+--badge-margin: 0 1% 1% 0;
+--badge-max-width: 100%;
+--badge-min-width: 22px;
+--badge-outline: 0;
+--badge-text-align: center;
+--badge-text-decoration: none;
+--badge-vertical-align: middle;
+--badge-white-space: nowrap;
+```
+
 ## Styles
 Customizable presets that give your pattern a specific style-set.
 
-### badge-solid
+### `@extend %badge-solid;`
 Draws a solid background ontop of a badge with white text for contrast.
 
 ##### Options
 
-* `$color-passive: #333` Controls the color of the badge background
-* `$color-text: #fff` Controls the color of the badge text
-* `$radius-size: 50px` Controls how much the badge is rounded off on it’s corners
-* `$border: none` Optional argument lets you specify a border style around your badge
-* `$shadow: none` Optional argument that lets you specify a shadow around your badge
+```css
+--badge-color: #333; // Controls the color of the badge background
+--badge-border: none; // Optional argument lets you specify a border style around your badge
+--badge-radius: 50px; // Controls how much the badge is rounded off on it’s corners
+--badge-shadow: none; // Optional argument that lets you specify a shadow around your badge
+--badge-text-color: #fff; // Controls the color of the badge text
+```
 
 ##### Example
 ```css
@@ -56,17 +77,18 @@ Draws a solid background ontop of a badge with white text for contrast.
 @mixin badge-solid green, white, 5px, 1px solid orange, 0 1px 5px rgba(0, 0, 0, .5);
 ```
 
-### badge-hollow
+### `@extend %badge-hollow;`
 Draws a bordered element with dark text for contrast.
 
 ##### Options
 
-* `$color-passive: #333` Controls the color of the badge border
-* `$color-text: #333` Controls the color of the badge text
-* `$color-background: transparent` Optional argument for changing the background color
-* `$radius-size: 50px` Controls how much the badge is rounded off on it’s corners
-* `$border-width: 1px` Controls the thickness of the badge border
-* `$shadow: none` Optional argument that lets you specify a shadow around your badge
+```css
+--badge-color: #333; // Controls the color of the badge border
+--badge-background: transparent; // Optional argument for changing the background color
+--badge-border-size: 1px; // Controls the thickness of the badge border
+--badge-radius-size: 50px; // Controls how much the badge is rounded off on it’s corners
+--badge-shadow: none; // Optional argument that lets you specify a shadow around your badge
+```
 
 ##### Example
 ```css
