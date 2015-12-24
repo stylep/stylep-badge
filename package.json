@@ -1,7 +1,7 @@
 {
   "name": "stylep-badge",
   "version": "0.1.0",
-  "description": "A simple badge style pattern for your next project.",
+  "description": "Reusable, extendable, and fully customizable bage pattern and styles.",
   "main": "index.css",
   "directories": {
     "example": "example"
@@ -26,7 +26,7 @@
     "stylep",
     "postcss",
     "css",
-    "buttons"
+    "badge"
   ],
   "author": "Stephen Way <stephen@stephenway.net> (http://stephenway.net)",
   "license": "MIT",
