@@ -37,7 +37,7 @@ Placeholder selectors that contain common styles for structure and basic behavio
 #### `@extend %badge-inline;`
 Renders an inline element with standard padding and margin.
 
-##### Options
+##### Variables
 
 ```css
 --badge-display: inline-block;
@@ -61,7 +61,7 @@ Customizable presets that give your pattern a specific style-set.
 ### `@extend %badge-solid;`
 Draws a solid background ontop of a badge with white text for contrast.
 
-##### Options
+##### Variables
 
 ```css
 --badge-color: #333; // background
@@ -74,7 +74,7 @@ Draws a solid background ontop of a badge with white text for contrast.
 ### `@extend %badge-hollow;`
 Draws a bordered element with dark text for contrast.
 
-##### Options
+##### Variables
 
 ```css
 --badge-color: #333; // background and text color
