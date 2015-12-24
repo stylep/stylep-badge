@@ -3,14 +3,12 @@ var postcss = require('gulp-postcss');
 var simplevars = require('postcss-simple-vars');
 var cssimport = require('postcss-import');
 var nested = require('postcss-nested');
-var mixins = require('postcss-mixins');
 var extend = require('postcss-extend');
 
 // Compile css into /example
 gulp.task('css', function() {
         var processors = [
                 cssimport,
-                mixins,
                 simplevars,
                 nested,
                 extend
