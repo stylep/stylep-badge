@@ -2,7 +2,7 @@
 .badge--inline {
   border-width: 0;
   display: inline-block;
-  font-size: 12px;
+  font-size: var(--badge-font-size, 12px);
   padding: 3px 8px;
   position: relative;
   line-height: 1;
