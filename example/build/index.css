@@ -15,7 +15,7 @@
 }
 
 .badge--solid, .badge--solid-1, .badge--solid-2, .badge--solid-3, .badge--solid-4, .badge--solid-5 {
-  background: var(--badge-color, #333);
+  background: var(--badge-color, #555);
   border: var(--badge-border, none);
   border-radius: var(--badge-radius, 50px);
   box-shadow: var(--badge-shadow, none);
@@ -24,10 +24,10 @@
 
 .badge--hollow, .badge--hollow-1, .badge--hollow-2, .badge--hollow-3, .badge--hollow-4 {
   background: var(--badge-background, transparent);
-  border: var(--badge-border-size, 1px) var(--badge-border-style, solid) var(--badge-color, #333);
+  border: var(--badge-border-size, 1px) var(--badge-border-style, solid) var(--badge-color, #555);
   border-radius: var(--badge-radius, 50px);
   box-shadow: var(--badge-shadow, none);
-  color: var(--badge-color, #333);
+  color: var(--badge-color, #555);
 }
 
 body {

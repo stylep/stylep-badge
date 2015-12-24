@@ -14,7 +14,7 @@
 }
 
 %badge-solid {
-  background: var(--badge-color, #333);
+  background: var(--badge-color, #555);
   border: var(--badge-border, none);
   border-radius: var(--badge-radius, 50px);
   box-shadow: var(--badge-shadow, none);
@@ -23,9 +23,9 @@
 
 %badge-hollow {
   background: var(--badge-background, transparent);
-  border: var(--badge-border-size, 1px) var(--badge-border-style, solid) var(--badge-color, #333);
+  border: var(--badge-border-size, 1px) var(--badge-border-style, solid) var(--badge-color, #555);
   border-radius: var(--badge-radius, 50px);
   box-shadow: var(--badge-shadow, none);
-  color: var(--badge-color, #333);
+  color: var(--badge-color, #555);
 }
 
