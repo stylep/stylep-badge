@@ -1,46 +1,32 @@
 %badge-inline {
-  border-width: 0;
-  display: inline-block;
+  display: var(--badge-display, inline-block);
   font-size: var(--badge-font-size, 12px);
-  padding: 3px 8px;
-  position: relative;
-  line-height: 1;
-  margin: 0 1% 1% 0;
-  max-width: 100%;
-  min-width: 22px;
-  outline: 0;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  white-space: nowrap;
+  padding: var(--badge-padding, 3px 8px);
+  position: var(--badge-position, relative);
+  line-height: var(--badge-line-height, 1);
+  margin: var(--badge-margin, 0 1% 1% 0);
+  max-width: var(--badge-max-width, 100%);
+  min-width: var(--badge-min-width, 22px);
+  outline: var(--badge-outline, 0);
+  text-align: var(--badge-text-align, center);
+  text-decoration: var(--badge-text-decoration, none);
+  vertical-align: var(--badge-vertical-align, middle);
+  white-space: var(--badge-white-space, nowrap);
 }
 
-@define-mixin badge-solid
-  $color-passive: #333,
-  $color-text: #fff,
-  $radius-size: 50px,
-  $border: none,
-  $shadow: none
-{
-
-  background-color: $color-passive;
-  border: $border;
-  border-radius: $radius-size;
-  color: $color-text;
-  @mixin-content;
+%badge-solid {
+  background: var(--badge-color, #333);
+  border: var(--badge-border, none);
+  border-radius: var(--badge-radius, 50px);
+  box-shadow: var(--badge-shadow, none);
+  color: var(--badge-text-color, #fff);
 }
 
-@define-mixin badge-hollow
-  $color-passive: #333,
-  $color-text: #333,
-  $color-background: transparent,
-  $radius-size: 4px,
-  $border-width: 1px,
-  $shadow: none
-{
-  background-color: $color-background;
-  border: $border-width solid $color-passive;
-  border-radius: $radius-size;
-  color: $color-text;
+%badge-hollow {
+  background: var(--badge-background, transparent);
+  border: var(--badge-border-size, 1px) var(--badge-border-style, solid) var(--badge-color, #333);
+  border-radius: var(--badge-radius, 50px);
+  box-shadow: var(--badge-shadow, none);
+  color: var(--badge-color, #333);
 }
 
