@@ -18,5 +18,9 @@ h1 { font-weight: 100; letter-spacing: 1px; }
 h2 { font-weight: 200; }
 h3 { font-weight: 300; }
 
-/* specific classNames that show off every pattern and style */
+.badge--inline { @extend %badge-inline; }
+
+.badge--solid { @mixin badge-solid; }
+
+.badge--hollow { @mixin badge-hollow; }
 

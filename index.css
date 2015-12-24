@@ -1,9 +1,46 @@
-%name-of-pattern {
+%badge-inline {
+  border-width: 0;
+  display: inline-block;
+  padding: 3px 8px;
+  position: relative;
+  line-height: 1;
+  margin: 0 1% 1% 0;
+  max-width: 100%;
+  min-width: 22px;
+  outline: 0;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
-@define-mixin name-of-style
-  $param-name: default-value {
+@define-mixin badge-solid
+  $color-passive: #333,
+  $color-text: #fff,
+  $radius-size: 50px;
+  $border: none,
+  $shadow: none
+{
 
+  background-color: $color-passive;
+  border: $border;
+  border-radius: $radius-size;
+  color: $color-text;
   @mixin-content;
 }
 
+@define-mixin badge-hollow
+  $color-passive: #333,
+  $color-text: $color-passive,
+  $color-background: transparent,
+  $radius-size: 4px,
+  $border-width: 1px,
+  $shadow: none
+{
+  background-color: $color-background;
+  border-color: $color-passive;
+  border-radius: $radius-size;
+  border-style: solid;
+  border-width: 1px;
+  color: $color-passive;
+}

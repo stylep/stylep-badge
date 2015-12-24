@@ -1,7 +1,7 @@
 {
-  "name": "stylep-button",
+  "name": "stylep-badge",
   "version": "0.1.0",
-  "description": "A simple button style pattern for your next project.",
+  "description": "A simple badge style pattern for your next project.",
   "main": "index.css",
   "directories": {
     "example": "example"
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stylep/stylep-button.git"
+    "url": "git+https://github.com/stylep/stylep-badge.git"
   },
   "keywords": [
     "stylep",
@@ -32,7 +32,7 @@
   "author": "Stephen Way <stephen@stephenway.net> (http://stephenway.net)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/stylep/stylep-button/issues"
+    "url": "https://github.com/stylep/stylep-badge/issues"
   },
-  "homepage": "https://github.com/stylep/stylep-button#readme"
+  "homepage": "https://github.com/stylep/stylep-badge#readme"
 }
