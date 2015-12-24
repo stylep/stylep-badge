@@ -47,7 +47,6 @@ Renders an inline element with standard padding and margin.
 --badge-line-height: 1;
 --badge-margin: 0 1% 1% 0;
 --badge-max-width: 100%;
---badge-min-width: 22px;
 --badge-outline: 0;
 --badge-text-align: center;
 --badge-text-decoration: none;
