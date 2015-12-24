@@ -22,7 +22,7 @@ spm install badge
   @extend %badge-inline;
 
   /* Customize your button */
-  @mixin badge-solid param, param;
+  @mixin badge-solid green, white, 5px;
 
   /* or roll your own */
 
@@ -34,21 +34,43 @@ spm install badge
 Placeholder selectors that contain common styles for structure and basic behavior.
 
 #### `@extend %badge-inline;`
-Describe what this pattern does.
+Renders an inline element with standard padding and margin.
 
 ## Styles
 Customizable presets that give your pattern a specific style-set.
 
 ### badge-solid
-Describe the visual look and feel of this style.
+Draws a solid background ontop of a badge with white text for contrast.
 
 ##### Options
 
-* `$param: default-value` Describe what this does
+* `$color-passive: #333` Controls the color of the badge background
+* `$color-text: #fff` Controls the color of the badge text
+* `$radius-size: 50px` Controls how much the badge is rounded off on it’s corners
+* `$border: none` Optional argument lets you specify a border style around your badge
+* `$shadow: none` Optional argument that lets you specify a shadow around your badge
 
 ##### Example
 ```css
-/* describe in english what this following statement really means in detail */
-@mixin badge-solid default-value;
+/* A solid green badge with white text, 5 pixels border-radius, with an orange border and a small dark shadow. */
+@mixin badge-solid green, white, 5px, 1px solid orange, 0 1px 5px rgba(0, 0, 0, .5);
+```
+
+### badge-hollow
+Draws a bordered element with dark text for contrast.
+
+##### Options
+
+* `$color-passive: #333` Controls the color of the badge border
+* `$color-text: #333` Controls the color of the badge text
+* `$color-background: transparent` Optional argument for changing the background color
+* `$radius-size: 50px` Controls how much the badge is rounded off on it’s corners
+* `$border-width: 1px` Controls the thickness of the badge border
+* `$shadow: none` Optional argument that lets you specify a shadow around your badge
+
+##### Example
+```css
+/* A bordered badge with dark text, no background, rounded corners, 1px border and no shadow. */
+@mixin badge-hollow #333, #333, transparent, 50px, 1px, none;
 ```
 
