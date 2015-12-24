@@ -6,7 +6,6 @@
   line-height: var(--badge-line-height, 1);
   margin: var(--badge-margin, 0 1% 1% 0);
   max-width: var(--badge-max-width, 100%);
-  min-width: var(--badge-min-width, 22px);
   outline: var(--badge-outline, 0);
   text-align: var(--badge-text-align, center);
   text-decoration: var(--badge-text-decoration, none);

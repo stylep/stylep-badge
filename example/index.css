@@ -1,9 +1,6 @@
 /* @import stylep-button; */
 @import '../index.css';
 
-:root {
-}
-
 body {
   background-color: #E8EBEF;
   color: #6B6B77;
@@ -56,6 +53,12 @@ h3 { font-weight: 300; }
 .badge--solid-4 {
   @extend %badge-solid;
   --badge-text-color: green;
+}
+
+.badge--solid-5 {
+  @extend %badge-solid;
+  --badge-color: blue;
+  --badge-shadow: inset -1px 0 20px rgba(255, 255, 255, .5), 0 0 2px black;
 }
 
 .badge--hollow { @extend %badge-hollow; }

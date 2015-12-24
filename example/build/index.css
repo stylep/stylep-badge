@@ -7,7 +7,6 @@
   line-height: var(--badge-line-height, 1);
   margin: var(--badge-margin, 0 1% 1% 0);
   max-width: var(--badge-max-width, 100%);
-  min-width: var(--badge-min-width, 22px);
   outline: var(--badge-outline, 0);
   text-align: var(--badge-text-align, center);
   text-decoration: var(--badge-text-decoration, none);
@@ -15,7 +14,7 @@
   white-space: var(--badge-white-space, nowrap);
 }
 
-.badge--solid, .badge--solid-1, .badge--solid-2, .badge--solid-3, .badge--solid-4 {
+.badge--solid, .badge--solid-1, .badge--solid-2, .badge--solid-3, .badge--solid-4, .badge--solid-5 {
   background: var(--badge-color, #333);
   border: var(--badge-border, none);
   border-radius: var(--badge-radius, 50px);
@@ -29,9 +28,6 @@
   border-radius: var(--badge-radius, 50px);
   box-shadow: var(--badge-shadow, none);
   color: var(--badge-color, #333);
-}
-
-:root {
 }
 
 body {
@@ -76,6 +72,11 @@ h3 { font-weight: 300; }
 
 .badge--solid-4 {
   --badge-text-color: green;
+}
+
+.badge--solid-5 {
+  --badge-color: blue;
+  --badge-shadow: inset -1px 0 20px rgba(255, 255, 255, .5), 0 0 2px black;
 }
 
 .badge--hollow-1 {
