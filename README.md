@@ -83,4 +83,6 @@ Draws a bordered element with dark text for contrast.
 --badge-shadow: none;
 ```
 
+## License
+This project is licensed under the MIT [license](LICENSE).
 
