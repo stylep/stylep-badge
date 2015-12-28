@@ -1,4 +1,4 @@
-/* @import stylep-button; */
+/* @import stylep-badge; */
 .badge--inline, .badge--inline-1, .badge--inline-2 {
   display: var(--badge-display, inline-block);
   font-size: var(--badge-font-size, 12px);

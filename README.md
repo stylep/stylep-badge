@@ -18,10 +18,10 @@ spm install badge
 
 .badge {
 
-  /* Button Design Pattern */
+  /* Badge Design Pattern */
   @extend %badge-inline;
 
-  /* Customize your button */
+  /* Customize your badge */
   @extend badge-solid;
   --badge-color: blue;
 
