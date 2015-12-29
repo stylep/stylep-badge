@@ -19,11 +19,10 @@ spm install badge
 .badge {
 
   /* Badge Design Pattern */
-  @extend %badge-inline;
+  @mixin badge-inline;
 
   /* Customize your badge */
-  @extend badge-solid;
-  --badge-color: blue;
+  @mixin badge-solid blue;
 
   /* or roll your own */
 
@@ -34,54 +33,36 @@ spm install badge
 ## Patterns
 Placeholder selectors that contain common styles for structure and basic behavior.
 
-#### `@extend %badge-inline;`
+#### `badge-inline`
 Renders an inline element with standard padding and margin.
 
-##### Variables
+##### Options
 
-```css
---badge-display: inline-block;
---badge-font-size: 12px;
---badge-padding: 3px 8px;
---badge-position: relative;
---badge-line-height: 1;
---badge-margin: 0 1% 1% 0;
---badge-max-width: 100%;
---badge-outline: 0;
---badge-text-align: center;
---badge-text-decoration: none;
---badge-vertical-align: middle;
---badge-white-space: nowrap;
-```
+* `$badge-font-size: 12px` How large the text is inside the badge
+* `$badge-padding: 3px 8px` Space inside the badge
+* `$badge-margin: 0 1% 1% 0` Space around the badge
 
 ## Styles
 Customizable presets that give your pattern a specific style-set.
 
-### `@extend %badge-solid;`
+### `badge-solid`
 Draws a solid background ontop of a badge with white text for contrast.
 
-##### Variables
+##### Options
 
-```css
---badge-color: #333; // background
---badge-border: none;
---badge-radius: 50px;
---badge-shadow: none;
---badge-text-color: #fff;
-```
+* `$badge-color: #555` Color of the badge
+* `$badge-text-color: #fff` Color of the text inside the badge
+* `$badge-radius: 50px` Roundness of the badge
 
-### `@extend %badge-hollow;`
+### `badge-hollow`
 Draws a bordered element with dark text for contrast.
 
-##### Variables
+##### Options
 
-```css
---badge-color: #333; // background and text color
---badge-background: transparent;
---badge-border-size: 1px;
---badge-radius-size: 50px;
---badge-shadow: none;
-```
+* `$badge-color: #555` Color of the outline and text of the badge
+* `$badge-radius: 50px` Roundness of the badge
+* `$badge-border-style: solid` Style of the border around the badge
+* `$badge-border-width: 1px` Thickness of the border around the badge
 
 ## License
 This project is licensed under the MIT [license](LICENSE).
