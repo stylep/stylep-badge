@@ -1,6 +1,6 @@
 {
   "name": "stylep-badge",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Reusable, extendable, and fully customizable bage pattern and styles.",
   "main": "index.css",
   "directories": {
