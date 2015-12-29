@@ -1,34 +1,4 @@
 /* @import stylep-badge; */
-.badge--inline, .badge--inline-1, .badge--inline-2 {
-  display: var(--badge-display, inline-block);
-  font-size: var(--badge-font-size, 12px);
-  padding: var(--badge-padding, 3px 8px);
-  position: var(--badge-position, relative);
-  line-height: var(--badge-line-height, 1);
-  margin: var(--badge-margin, 0 1% 1% 0);
-  max-width: var(--badge-max-width, 100%);
-  outline: var(--badge-outline, 0);
-  text-align: var(--badge-text-align, center);
-  text-decoration: var(--badge-text-decoration, none);
-  vertical-align: var(--badge-vertical-align, middle);
-  white-space: var(--badge-white-space, nowrap);
-}
-
-.badge--solid, .badge--solid-1, .badge--solid-2, .badge--solid-3, .badge--solid-4, .badge--solid-5 {
-  background: var(--badge-color, #555);
-  border: var(--badge-border, none);
-  border-radius: var(--badge-radius, 50px);
-  box-shadow: var(--badge-shadow, none);
-  color: var(--badge-text-color, #fff);
-}
-
-.badge--hollow, .badge--hollow-1, .badge--hollow-2, .badge--hollow-3, .badge--hollow-4 {
-  background: var(--badge-background, transparent);
-  border: var(--badge-border-size, 1px) var(--badge-border-style, solid) var(--badge-color, #555);
-  border-radius: var(--badge-radius, 50px);
-  box-shadow: var(--badge-shadow, none);
-  color: var(--badge-color, #555);
-}
 
 body {
   background-color: #E8EBEF;
@@ -47,52 +17,67 @@ h1 { font-weight: 100; letter-spacing: 1px; }
 h2 { font-weight: 200; }
 h3 { font-weight: 300; }
 
-.badge--inline-1 {
-  --badge-font-size: 18px;
-  --badge-padding: 10px 15px;
-  --badge-margin: 0 3% 3% 0;
-}
+.badge--inline { display: inline-block; font-size: 12px; line-height: 1; margin: 0 1% 1% 0; max-width: 100%; outline: 0; padding: 3px 8px; position: relative; text-align: center; text-decoration: none; vertical-align: middle; white-space: nowrap; }
+
+.badge--inline-1 { display: inline-block; font-size: 18px; line-height: 1; margin: 0 3% 3% 0; max-width: 100%; outline: 0; padding: 10px 15px; position: relative; text-align: center; text-decoration: none; vertical-align: middle; white-space: nowrap; }
 
 .badge--inline-2 {
-  --badge-outline: 1px solid red;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1;
+  margin: 0 1% 1% 0;
+  max-width: 100%;
+  outline: 0;
+  padding: 3px 8px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  outline: 1px solid red;
 }
 
-.badge--solid-1 {
-  --badge-color: green;
-}
+.badge--solid { background: #555; border-radius: 50px; color: #fff; }
+
+.badge--solid-1 { background: green; border-radius: 50px; color: #fff; }
 
 .badge--solid-2 {
-  --badge-border: 2px dotted red;
-  --badge-radius: 2px;
+  background: #555;
+  border-radius: 2px;
+  color: #fff;
+  border: 2px dotted red;
 }
 
 .badge--solid-3 {
-  --badge-shadow: 0 0 2px black;
+  background: #555;
+  border-radius: 50px;
+  color: #fff;
+  box-shadow: 0 0 2px black;
 }
 
-.badge--solid-4 {
-  --badge-color: #efefef;
-  --badge-text-color: green;
-}
+.badge--solid-4 { background: #efefef; border-radius: 50px; color: green; }
 
 .badge--solid-5 {
-  --badge-color: blue;
-  --badge-shadow: inset -1px 0 20px rgba(255, 255, 255, .5), 0 0 2px black;
+  background: blue;
+  border-radius: 50px;
+  color: #fff;
+  box-shadow: inset -1px 0 20px rgba(255, 255, 255, .5), 0 0 2px black;
 }
 
-.badge--hollow-1 {
-  --badge-color: green;
-}
+.badge--hollow { border-color: #555; border-radius: 50px; border-style: solid; border-width: 1px; color: #555; }
 
-.badge--hollow-2 {
-  --badge-background-color: cyan;
-}
+.badge--hollow-1 { border-color: green; border-radius: 50px; border-style: solid; border-width: 1px; color: green; }
 
-.badge--hollow-3 {
-  --badge-border-size: 3px;
-  --badge-border-style: dashed;
-}
+.badge--hollow-2 { border-color: cyan; border-radius: 50px; border-style: solid; border-width: 1px; color: cyan; }
+
+.badge--hollow-3 { border-color: #555; border-radius: 50px; border-style: dashed; border-width: 3px; color: #555; }
 
 .badge--hollow-4 {
-  --badge-shadow: 0 1px 10px rgba(0, 0, 0, .5);
+  border-color: #555;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 1px;
+  color: #555;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, .5);
 }
+
