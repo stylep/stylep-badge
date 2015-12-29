@@ -1,31 +1,39 @@
-%badge-inline {
-  display: var(--badge-display, inline-block);
-  font-size: var(--badge-font-size, 12px);
-  padding: var(--badge-padding, 3px 8px);
-  position: var(--badge-position, relative);
-  line-height: var(--badge-line-height, 1);
-  margin: var(--badge-margin, 0 1% 1% 0);
-  max-width: var(--badge-max-width, 100%);
-  outline: var(--badge-outline, 0);
-  text-align: var(--badge-text-align, center);
-  text-decoration: var(--badge-text-decoration, none);
-  vertical-align: var(--badge-vertical-align, middle);
-  white-space: var(--badge-white-space, nowrap);
+@define-mixin badge-inline
+  $badge-font-size: 12px,
+  $badge-padding: 3px 8px,
+  $badge-margin: 0 1% 1% 0 {
+  display: inline-block;
+  font-size: $badge-font-size;
+  line-height: 1;
+  margin: $badge-margin;
+  max-width: 100%;
+  outline: 0;
+  padding: $badge-padding;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
-%badge-solid {
-  background: var(--badge-color, #555);
-  border: var(--badge-border, none);
-  border-radius: var(--badge-radius, 50px);
-  box-shadow: var(--badge-shadow, none);
-  color: var(--badge-text-color, #fff);
+@define-mixin badge-solid
+  $badge-color: #555,
+  $badge-text-color: #fff,
+  $badge-radius: 50px {
+  background: $badge-color;
+  border-radius: $badge-radius;
+  color: $badge-text-color;
 }
 
-%badge-hollow {
-  background: var(--badge-background, transparent);
-  border: var(--badge-border-size, 1px) var(--badge-border-style, solid) var(--badge-color, #555);
-  border-radius: var(--badge-radius, 50px);
-  box-shadow: var(--badge-shadow, none);
-  color: var(--badge-color, #555);
+@define-mixin badge-hollow
+  $badge-color: #555,
+  $badge-radius: 50px,
+  $badge-border-style: solid,
+  $badge-border-width: 1px {
+  border-color: $badge-color;
+  border-radius: $badge-radius;
+  border-style: $badge-border-style;
+  border-width: $badge-border-width;
+  color: $badge-color;
 }
 
